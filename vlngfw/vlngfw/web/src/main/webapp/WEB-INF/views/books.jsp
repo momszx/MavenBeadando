@@ -1,3 +1,4 @@
+
 <%--
   Created by IntelliJ IDEA.
   User: momsz
@@ -54,6 +55,7 @@
 </c:if>
 <form action="${pageContext.servletContext.contextPath}/add">
     <button type="submit">Add new book</button>
+    
 </form>
 <form action="${pageContext.servletContext.contextPath}/">
     <button type="submit">BACK</button>

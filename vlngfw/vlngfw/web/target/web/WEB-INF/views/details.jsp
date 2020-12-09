@@ -50,7 +50,7 @@
         <td>${book.legth}</td>
     </tr>
 </table>
-<form action="${pageContext.servletContext.contextPath}/Books">
+<form action="${pageContext.servletContext.contextPath}/books">
     <button type="submit">Books</button>
 </form>
 <form action="${pageContext.servletContext.contextPath}/">

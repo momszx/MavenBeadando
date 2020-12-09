@@ -16,33 +16,45 @@
 <body>
 <h1>Lest add some block buster!</h1>
 <form:form method="post" action="add">
-    <form:label path="title">Title</form:label>
-    <form:input path="title"/>
-    <br>
-    <form:label path="writer">Writer</form:label>
-    <form:input path="writer"/>
-    <br>
-    <form:label path="publisher">Publisher</form:label>
-    <form:input path="publisher"/>
-    <br>
-    <form:label path="release_date">Release</form:label>
-    <form:input type="date" path="release_date"/>
-    <br>
-    <form:label path="genre">Genre</form:label>
-    <form:select path="genre" multiple="true">
-        <form:options items="${genreTypes}"></form:options>
-    </form:select>
-    <br>
-    <form:label path="type">Type</form:label>
-    <form:select path="type" multiple="true">
-        <form:options items="${typeTypes}"></form:options>
-    </form:select>
-    <br>
-    <form:label path="length">Length</form:label>
-    <form:input path="length"/>
-    <br>
-    <button type="submit">Ok! ADD IT</button>
-</form:form>
+    <table>
+        <tr>
+            <td><form:label path="title">Title</form:label></td>
+            <td><form:input type="text" path="title"/></td>
+        </tr>
+        <tr>
+            <td><form:label path="writer">Writer</form:label></td>
+            <td><form:input path="writer"/></td>
+        </tr>
+        <tr>
+            <td><form:label path="publisher">Publisher</form:label></td>
+            <td><form:input path="publisher"/></td>
+        </tr>
+        <tr>
+            <td><form:label path="release_date">Release</form:label></td>
+            <td><form:input type="date" path="release_date"/></td>
+        </tr>
+        <tr>
+            <td><form:label path="genre">Genre</form:label></td>
+            <td><form:select path="genre" multiple="true">
+                <form:options items="${genreTypes}"></form:options>
+                </form:select>
+            </td>
+        </tr>
+        <tr>
+            <td> <form:label path="type">Type</form:label></td>
+            <td><form:select path="type" multiple="true">
+                <form:options items="${typeTypes}"></form:options>
+            </form:select></td>
+        </tr>
+        <tr>
+            <td><form:label path="length">Length</form:label></td>
+            <td> <form:input path="length"/></td>
+        </tr>
+        <tr>
+            <td><button type="submit">Ok! ADD IT</button>
+                </form:form></td>
+        </tr>
+    </table>
 <form action="${pageContext.servletContext.contextPath}/books">
     <button type="submit">books</button>
 </form>
