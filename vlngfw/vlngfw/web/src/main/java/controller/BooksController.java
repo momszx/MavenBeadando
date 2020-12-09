@@ -1,4 +1,4 @@
-package java.controller;
+package controller;
 
 import daojson.DAOJSON;
 import daojson.DuplicatedBook;
