@@ -1,8 +1,8 @@
 package java.controller;
 
-import dao_json.DAOJSON;
-import dao_json.DuplicatedBook;
-import dao_json.BookNotExist;
+import daojson.DAOJSON;
+import daojson.DuplicatedBook;
+import daojson.BookNotExist;
 
 import books.model.Book;
 import books.model.Genre;

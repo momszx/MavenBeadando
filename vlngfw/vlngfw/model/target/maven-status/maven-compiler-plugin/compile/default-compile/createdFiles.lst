@@ -1,0 +1,5 @@
+books/model/Type.class
+books/exceptions/ArgumentNullException.class
+books/model/Book.class
+books/exceptions/InvalidLength.class
+books/model/Genre.class

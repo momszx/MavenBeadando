@@ -28,7 +28,7 @@
     </dependency>
     <dependency>
       <groupId>org.example</groupId>
-      <artifactId>dao-json</artifactId>
+      <artifactId>daojson</artifactId>
       <version>1.0-SNAPSHOT</version>
     </dependency>
     <dependency>
