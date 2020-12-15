@@ -29,7 +29,7 @@ public class BooksController {
         return m;
     }
 
-    @RequestMapping(value = "/books")
+    @GetMapping(value = "/books")
     public ModelAndView listbooks() throws IOException {
         ModelAndView m = new ModelAndView("books");
         m.addObject("books", daojson.readAllBook());
@@ -60,7 +60,7 @@ public class BooksController {
         return m;
     }
 
-    @RequestMapping(value = "/books/{title}")
+    @GetMapping(value = "/books/{title}")
     public ModelAndView getBookByTitle(@PathVariable String title) throws IOException, BookNotExist {
         ModelAndView m = new ModelAndView("details");
         m.addObject("books", daojson.readBookByTitle(title));

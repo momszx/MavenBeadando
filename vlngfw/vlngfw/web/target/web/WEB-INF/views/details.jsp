@@ -1,3 +1,5 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@page isELIgnored="false" %>
 <%--
   Created by IntelliJ IDEA.
   User: momsz
@@ -53,7 +55,7 @@
 <form action="${pageContext.servletContext.contextPath}/books">
     <button type="submit">Books</button>
 </form>
-<form action="${pageContext.servletContext.contextPath}/">
+<form action="{pageContext.servletContext.contextPath}/">
     <button type="submit">BACK</button>
 </form>
 <br>

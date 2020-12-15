@@ -1,4 +1,5 @@
-
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@page isELIgnored="false" %>
 <%--
   Created by IntelliJ IDEA.
   User: momsz
@@ -36,30 +37,29 @@
                 <td>${book.publisher}</td>
                 <td>${book.release}</td>
                 <td>
-                    <c:forEach items="${book.genre}" var="genre">
-                        ${genre}
-                    </c:forEach>
-                </td>
-                <td>
-                    <c:forEach items="${book.type}" var="type">
-                        ${type}
-                    </c:forEach>
-                </td>
-                <td>${book.length}</td>
-            </tr>
-        </c:forEach>
-    </table>
+              <c:forEach items="${book.genre}" var="genre">
+                  ${genre}
+              </c:forEach>
+          </td>
+          <td>
+               <c:forEach items="${book.type}" var="type">
+                 ${type}
+             </c:forEach>
+         </td>
+         <td>${book.length}</td>
+     </tr>
+ </c:forEach>
+</table>
 </c:if>
 <c:if test="${empty books}">
-    <h1>Ohh no! I don't have any!</h1>
+<h1>Ohh no! I don't have any!</h1>
 </c:if>
 <form action="${pageContext.servletContext.contextPath}/add">
-    <button type="submit">Add new book</button>
-    <form action="${pageContext.servletContext.contextPath}/books">
-        <button type="submit">books</button>
+<button type="submit">Add new book</button>
+
 </form>
 <form action="${pageContext.servletContext.contextPath}/">
-    <button type="submit">BACK</button>
+<button type="submit">BACK</button>
 </form>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>

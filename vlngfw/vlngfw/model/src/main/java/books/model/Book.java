@@ -42,11 +42,11 @@ public class Book {
         }
     }
 
-    public String getDirector() {
+    public String getWriter() {
         return writer;
     }
 
-    public void setDirector(String director) throws ArgumentNullException {
+    public void setWriter(String director) throws ArgumentNullException {
         if (director == null) {
             throw new ArgumentNullException("Writer cannot be null!");
         } else {
@@ -105,9 +105,9 @@ public class Book {
     public Book() {
     }
 
-    public Book(String title, String director, String publisher, LocalDate release_date, Collection<Type> type, Collection<Genre> genre, int length) throws ArgumentNullException, InvalidLength {
+    public Book(String title, String writer, String publisher, LocalDate release_date, Collection<Type> type, Collection<Genre> genre, int length) throws ArgumentNullException, InvalidLength {
         setTitle(title);
-        setDirector(director);
+        setWriter(writer);
         setPublisher(publisher);
         setRelease_date(release_date);
         setGenre(genre);
