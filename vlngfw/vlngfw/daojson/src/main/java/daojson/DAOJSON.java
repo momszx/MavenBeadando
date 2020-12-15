@@ -24,6 +24,13 @@ public class DAOJSON {
             writer.write(("[]"));
             writer.close();
         }
+        else {
+            file.delete();
+            file.createNewFile();
+            FileWriter writer = new FileWriter(file);
+            writer.write(("[]"));
+            writer.close();
+        }
     }
 
     public Book readBookByTitle(String title) throws IOException, BookNotExist {

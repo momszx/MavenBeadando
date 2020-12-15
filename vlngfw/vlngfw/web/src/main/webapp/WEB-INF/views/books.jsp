@@ -23,23 +23,23 @@
             <td><b>Writer</b></td>
             <td><b>Publisher</b></td>
             <td><b>Release date</b></td>
-            <td><b>Genre</b></td>
-            <td><b>Type</b></td>
-            <td><b>Length</b></td>
-        </tr>
-        <c:forEach items="${books}" var="book">
-            <tr>
-                <td>
-                    <a href="${pageContext.servletContext.contextPath}/book/${book.title}">
-                            ${book.title}</a>
-                </td>
-                <td>${book.writer}</td>
-                <td>${book.publisher}</td>
-                <td>${book.release}</td>
-                <td>
-              <c:forEach items="${book.genre}" var="genre">
-                  ${genre}
-              </c:forEach>
+                <%-- <td><b>Genre</b></td>--%>
+                <td><b>Type</b></td>
+                <td><b>Length</b></td>
+            </tr>
+            <c:forEach items="${books}" var="book">
+                <tr>
+                    <td>
+                        <a href="${pageContext.servletContext.contextPath}/book/${book.title}">
+                                ${book.title}</a>
+                    </td>
+                    <td>${book.writer}</td>
+                    <td>${book.publisher}</td>
+                    <td>${book.release}</td>
+                    <td>
+                <%--  <c:forEach items="${book.genre}" var="genre">
+                      ${genre}
+                  </c:forEach>--%>
           </td>
           <td>
                <c:forEach items="${book.type}" var="type">

@@ -39,30 +39,30 @@
         </tr>
         <tr>
             <td><form:label path="genre">Genre</form:label></td>
-    <%-- <td><form:select path="genre" multiple="true">
-         <form:options items="${genreTypes}"></form:options>
-         </form:select>--%>
- </tr>
- <tr>
-     <td> <form:label path="type">Type</form:label></td>
-    <%-- <td><form:select path="type" multiple="true">
-         <form:options items="${typeTypes}"></form:options>
-     </form:select></td>--%>
- </tr>
- <tr>
-     <td><form:label path="length">Length</form:label></td>
-     <td> <form:input path="length"/></td>
- </tr>
- <tr>
-     <td><button type="submit">Ok! ADD IT</button>
-         </form:form></td>
- </tr>
-</table>
+            <td><form:select path="genre" multiple="true">
+                 <form:options items="${genreTypes}"></form:options>
+                 </form:select>
+        </tr>
+        <tr>
+            <td> <form:label path="type">Type</form:label></td>
+            <td><form:select path="type" multiple="true">
+                 <form:options items="${typeTypes}"></form:options>
+             </form:select></td>
+        </tr>
+        <tr>
+            <td><form:label path="length">Length</form:label></td>
+            <td> <form:input path="length"/></td>
+        </tr>
+        <tr>
+            <td><button type="submit">Ok! ADD IT</button>
+                 </form:form></td>
+        </tr>
+    </table>
 <form action="${pageContext.servletContext.contextPath}/books">
-<button type="submit">books</button>
+    <button type="submit">books</button>
 </form>
 <form action="${pageContext.servletContext.contextPath}/">
-<button type="submit">BACK</button>
+    <button type="submit">BACK</button>
 </form>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
