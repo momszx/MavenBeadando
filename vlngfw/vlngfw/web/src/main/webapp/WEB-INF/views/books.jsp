@@ -35,7 +35,7 @@
                     </td>
                     <td>${book.writer}</td>
                     <td>${book.publisher}</td>
-                    <td>${book.release}</td>
+                    <td>${book.release_date}</td>
                     <td>
                 <%--  <c:forEach items="${book.genre}" var="genre">
                       ${genre}
