@@ -23,7 +23,7 @@
             <td><b>Writer</b></td>
             <td><b>Publisher</b></td>
             <td><b>Release date</b></td>
-                <%-- <td><b>Genre</b></td>--%>
+            <td><b>Genre</b></td>
                 <td><b>Type</b></td>
                 <td><b>Length</b></td>
             </tr>
@@ -37,9 +37,9 @@
                     <td>${book.publisher}</td>
                     <td>${book.release_date}</td>
                     <td>
-                <%--  <c:forEach items="${book.genre}" var="genre">
+                  <c:forEach items="${book.genre}" var="genre">
                       ${genre}
-                  </c:forEach>--%>
+                  </c:forEach>
           </td>
           <td>
                <c:forEach items="${book.type}" var="type">

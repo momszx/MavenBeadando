@@ -33,7 +33,7 @@
     </tr>
     <tr>
         <td>Release</td>
-        <td>${book.release}</td>
+        <td>${book.release_date}</td>
     </tr>
     <tr>
         <td>Genre</td>
@@ -49,7 +49,7 @@
     </tr>
     <tr>
         <td>Length</td>
-        <td>${book.legth}</td>
+        <td>${book.length}</td>
     </tr>
 </table>
 <form action="${pageContext.servletContext.contextPath}/books">

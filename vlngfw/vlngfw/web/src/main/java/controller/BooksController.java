@@ -48,7 +48,7 @@ public class BooksController {
             m.addObject("message", "EXISTS !" + book.getTitle());
             return m;
         }
-        ModelAndView m = new ModelAndView("redirect:book/" + book.getTitle());
+        ModelAndView m = new ModelAndView("redirect:books/" + book.getTitle());
         return m;
     }
 
@@ -63,7 +63,7 @@ public class BooksController {
     @GetMapping(value = "/books/{title}")
     public ModelAndView getBookByTitle(@PathVariable String title) throws IOException, BookNotExist {
         ModelAndView m = new ModelAndView("details");
-        m.addObject("books", daojson.readBookByTitle(title));
+        m.addObject("book", daojson.readBookByTitle(title));
         return m;
     }
 
